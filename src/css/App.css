@@ -1,0 +1,234 @@
+
+.forms{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  margin-top: 9px;
+}
+
+
+.forms >input{
+  width: 30%;
+
+   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px!important;
+}
+
+.saveDate{
+  margin-left:48px;
+}
+
+.saveDate::-webkit-calendar-picker-indicator{
+    background-color: var( --gray-600);
+    padding: 4px;
+    cursor: pointer;
+    font-size:22px;
+    width:calc(100% - 106px);
+}
+
+.busquedaDate{
+  margin-top: 20px!important;
+  width: 100%;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px!important;
+  padding: 0!important;
+}
+
+.busquedaDate::-webkit-calendar-picker-indicator{
+    background-color: var( --gray-600);
+    padding: 8px;
+    cursor: pointer;
+    font-size:22px;
+    width:100%;
+}
+
+input[type=date]::-webkit-calendar-picker-indicator:hover {
+  background-color: var( --gray-500);;
+}
+
+
+
+
+
+.d-none{
+  display: none;
+}
+
+h1>span {
+  margin-right: 10px;
+}
+
+button{
+   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px!important;
+}
+
+
+*,
+*:before,
+*:after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+@media(max-width:900px){
+    .forms{
+      flex-direction: column;
+    }
+    .forms >input{
+      width: 100%!important;
+    }
+    .saveDate{
+      margin-left:0px;
+      margin-top: 16px;
+    }
+    h1{
+      font-size: 18px!important;
+      margin-bottom: 16px!important;
+    }
+
+}
+
+.empty{
+    padding: 0;
+    margin: 0;
+    color: red;
+    text-align: center;
+    font-size: 40px;
+}
+
+.imgFile{
+  width: 150px;
+  margin-right: 6px;
+}
+
+.galeryContainer{
+  background-color: var(--gray-600);
+  background: rgb(162,186,215);
+  background: radial-gradient(circle, rgba(162,186,215,1) 0%, rgba(255,255,255,1) 32%, rgba(0,212,255,1) 100%);
+  background: rgb(162,186,215);
+  background: radial-gradient(circle, rgba(162,186,215,1) 0%, rgba(255,255,255,1) 32%, rgba(0,128,255,1) 100%);
+  padding: 10px;
+  margin-top: 26px;
+  color:var(--gray-800);
+  margin-bottom: 20px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px!important;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset!important;
+}
+
+.galery{
+  text-align: center;
+}
+
+
+
+
+
+
+
+.spinnerContainer{
+
+    width: 100%;
+    height: 100%;
+    border: 6px solid red;
+    position: fixed;
+    top: 0; left: 0;
+    z-index: 999;
+    background-color: rgba(0, 0, 0, 0.354);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translate(100%);
+}
+.spinnerContainerHere{
+
+    width: 100%;
+    height: 100%;
+    border: 6px solid rgba(255, 1, 1, 0.273);
+    position: fixed;
+    top: 0; left: 0;
+    z-index: 9999999;
+    background-color: rgba(0, 0, 0, 0.642);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translate(0);
+}
+
+.spinner {
+    border: 14px solid rgba(0, 0, 0, .0);
+
+    width: 136px;
+    height: 136px;
+
+    border-radius: 50%;
+    /*border-left-color: #09f;*/
+    border-left-color: red;
+    border-right-color: red;
+
+    animation: spin 4s linear infinite;
+   
+  }
+
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    
+    }
+  
+     50% {
+        transform: rotate(270deg);
+        border-top-color: red;
+        border-right-color: transparent;
+      } 
+  
+    70% {
+      transform: rotate(360deg);
+      /*border-radius: 50%;*/
+      border-right-color: transparent;
+   
+    } 
+  }
+
+
+/*@media(min-width:920px){
+    input[type="date"]{
+      min-width:6%;
+    }
+}*/
+
+
+/*
+input[type="date"]::-webkit-datetime-edit,
+ input[type="date"]::-webkit-inner-spin-button,
+  input[type="date"]::-webkit-clear-button {
+  color: red;
+  position: relative;
+}
+
+input[type="date"]::-webkit-datetime-edit-year-field{
+  position: absolute !important;
+  border-left:1px solid #8c8c8c;
+  padding: 2px;
+  color:#000;
+  left: 56px;
+}
+
+input[type="date"]::-webkit-datetime-edit-month-field{
+  position: absolute !important;
+  border-left:1px solid #8c8c8c;
+  padding: 2px;
+  color:#000;
+  left: 26px;
+}
+
+
+input[type="date"]::-webkit-datetime-edit-day-field{
+  position: absolute !important;
+  color:#000;
+  padding: 2px;
+  left: 4px;
+  
+}*/
