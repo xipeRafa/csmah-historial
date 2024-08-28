@@ -270,7 +270,7 @@ localStorage.setItem('urlArr', JSON.stringify(linksState))
             <h1>
                 <span onClick={() => setCount(0)}>CSMA</span>
 
-                <span>Cronologia</span>
+                <span>CRONOLOGIA</span>
 
                 <span
                     onClick={() => {
