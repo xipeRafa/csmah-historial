@@ -37,8 +37,8 @@ function App() {
         return new Promise((resolve) => {
             Resizer.imageFileResizer(
                 file,
-                612,
-                791,
+                1112,
+                1112,
                 "JPEG",
                 80,
                 0,

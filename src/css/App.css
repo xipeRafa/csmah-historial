@@ -99,10 +99,15 @@ button{
     font-size: 40px;
 }
 
+
 .imgFile{
-  width: 150px;
+  width: 300px;
   margin-right: 6px;
 }
+/*.imgFile{
+  width: 150px;
+  margin-right: 6px;
+}*/
 
 .galeryContainer{
   background-color: var(--gray-600);
