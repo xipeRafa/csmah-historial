@@ -315,10 +315,15 @@ localStorage.setItem('urlArr', JSON.stringify(linksState))
 
             </div>
 
+            <br />
+
+
+            <label for="start">Selecciona una Fecha</label>
 
 
             <input
                 className="busquedaDate"
+                id="start"
                 type="date"
                 onChange={(e) =>{setDateFinderState(e.target.value), setGetArr(!getArr)}}
             />
