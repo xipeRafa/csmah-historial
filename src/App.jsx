@@ -137,7 +137,7 @@ localStorage.setItem('urlArr', JSON.stringify(linksState))
        
         selectedFile.map((el, i)=>{
 
-            const filesFolderRef = ref(storageDocs,`Files/${Date.now()}/${el.name}`);
+            const filesFolderRef = ref(storageDocs,`Files-historial/${Date.now()}/${el.name}`);
 
             uploadBytes(filesFolderRef, el)
                 .then(() => {
